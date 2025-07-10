@@ -1,0 +1,51 @@
+.pokemon-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pokemon-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pokemon-card {
+  background-color: #f9fbe7;
+  border: 2px solid #aed581;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  padding: 12px;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  background-color: #f1f8e9;
+}
+
+.pokemon-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.pokemon-nombre {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #33691e;
+}
+
+.pokemon-tipo {
+  font-size: 0.9rem;
+  color: #689f38;
+}
