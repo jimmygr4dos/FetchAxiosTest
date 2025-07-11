@@ -5,8 +5,8 @@ function PokemonListAxios() {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon?limit=5")
-      .then((response) => setPokemons(response.data.results))
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=7")
+      .then((datos) => setPokemons(datos.data.results))
       .catch((error) => console.error("Error:", error));
   }, []);
 

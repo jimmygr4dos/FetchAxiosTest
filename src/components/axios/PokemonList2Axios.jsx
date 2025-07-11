@@ -6,7 +6,7 @@ function PokemonList2Axios() {
 
   useEffect(() => {
     // Paso 1: Obtener la lista base
-    axios.get("https://pokeapi.co/api/v2/pokemon?limit=5")
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=7")
       .then((response) => {
         const promises = response.data.results.map((pokemon) =>
           axios.get(pokemon.url).then((res) => ({

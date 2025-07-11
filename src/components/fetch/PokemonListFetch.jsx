@@ -6,7 +6,7 @@ function PokemonListFetch() {
   useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=5")
       .then((response) => response.json())
-      .then((data) => setPokemons(data.results))
+      .then((dataJson) => setPokemons(dataJson.results))
       .catch((error) => console.error("Error al obtener datos:", error));
   }, []);
   // console.log({pokemons})

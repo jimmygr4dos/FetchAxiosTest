@@ -8,10 +8,10 @@ import PokemonList2Axios from './components/axios/PokemonList2Axios'
 function App() {
   return (
     <>
-      <PokemonListFetch />
+      {/* <PokemonListFetch /> */}
       {/* <PokemonList2Fetch /> */}
       {/* <PokemonListAxios /> */}
-      {/* <PokemonList2Axios /> */}
+      <PokemonList2Axios />
     </>
   )
 }
